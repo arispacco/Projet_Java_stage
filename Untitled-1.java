@@ -9,7 +9,7 @@
 import java.util.Scanner;
 import java.util.InputMismatchException;
 
-public class projet_Aris_Jimmy {
+public class projetArisJimmy {
 
     public static String clean(float n) {
             return String.valueOf(n).replaceAll("\\.0$", "");
