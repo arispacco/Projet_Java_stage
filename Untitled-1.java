@@ -1,4 +1,3 @@
-
 /**Pour le premier projet nous allos créé une calculatrice
  * cette calculatrice doit être capable de faire l'addition, la soustraction, la multiplication et la division de nombre de tous types
  * Notre calculatrice doit pouvoir gérer les erreurs (division par 0)
@@ -21,17 +20,17 @@ public class projet_Aris_Jimmy {
             try {
                  System.out.println("entrer le premier nombre\n") ;
 
-                 int nombre1 = scanner.nextInt() ;
+                float nombre1 = scanner.nextFloat() ;
            
                 System.out.println("entrer le nombre suivant\n") ;
-                int nombre2 = scanner.nextInt() ;
+                float nombre2 = scanner.nextFloat() ;
                 
-                int somme = nombre1 + nombre2 ;
+                float somme = nombre1 + nombre2 ;
             
-                System.out.printf("la somme de %d et %d est : %d + %d = %d\n",nombre1, nombre2, nombre1, nombre2, somme) ;
+                System.out.printf("la somme de %s et %s est : %s + %s = %s\n", clean(nombre1), clean(nombre2), clean(nombre1), clean(nombre2), clean(somme));
             }
             catch (InputMismatchException e) {
-                System.out.println("veillez entré des valeurs entières\n") ;
+                System.out.println("veillez entré des valeurs valides\n") ;
                 return;
             }
         }
@@ -117,8 +116,7 @@ public class projet_Aris_Jimmy {
         System.out.println("5  -- Quitter --\n") ;
 
         int choix = scanner.nextInt();
-        
-        while (true) {
+    
 
             switch (choix) {
             case 1:
@@ -138,8 +136,8 @@ public class projet_Aris_Jimmy {
                 return;
             default:
                 System.out.println("Option invalide!");
-        }
-        }
+            }
 
     }
 }
+
